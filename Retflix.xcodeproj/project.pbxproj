@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		134CBED825500AAF0064D7CB /* RetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBED725500AAF0064D7CB /* RetflixApp.swift */; };
+		134CBEDC25500AB00064D7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134CBEDB25500AB00064D7CB /* Assets.xcassets */; };
+		134CBEDF25500AB00064D7CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134CBEDE25500AB00064D7CB /* Preview Assets.xcassets */; };
+		134CBEEA25500AB00064D7CB /* RetflixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBEE925500AB00064D7CB /* RetflixTests.swift */; };
+		134CBEF525500AB00064D7CB /* RetflixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBEF425500AB00064D7CB /* RetflixUITests.swift */; };
+		134CBF0725500B330064D7CB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF0625500B330064D7CB /* Movie.swift */; };
+		134CBF1025500BC30064D7CB /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF0F25500BC30064D7CB /* MovieService.swift */; };
+		134CBF1825500E0C0064D7CB /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF1725500E0C0064D7CB /* MovieStore.swift */; };
+		134CBF1D25500F060064D7CB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF1C25500F060064D7CB /* Utils.swift */; };
+		134CBF22255015D90064D7CB /* Movie+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF21255015D90064D7CB /* Movie+Stub.swift */; };
+		134CBF29255016A90064D7CB /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = 134CBF28255016A90064D7CB /* movie_info.json */; };
+		134CBF31255016C50064D7CB /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 134CBF30255016C50064D7CB /* movie_list.json */; };
+		134CBF36255016EA0064D7CB /* search_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = 134CBF35255016EA0064D7CB /* search_movie.json */; };
+		134CBF3C255018340064D7CB /* MovieBackdropCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF3B255018340064D7CB /* MovieBackdropCard.swift */; };
+		134CBF45255018A80064D7CB /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF44255018A80064D7CB /* ImageLoader.swift */; };
+		134CBF4D25501C820064D7CB /* MovieBackdropCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF4C25501C820064D7CB /* MovieBackdropCarouselView.swift */; };
+		134CBF5225501ECF0064D7CB /* MoviePosterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF5125501ECF0064D7CB /* MoviePosterCard.swift */; };
+		134CBF57255020010064D7CB /* MoviePosterCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF56255020010064D7CB /* MoviePosterCarouselView.swift */; };
+		134CBF5C255020FF0064D7CB /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF5B255020FF0064D7CB /* MovieListView.swift */; };
+		134CBF612550211B0064D7CB /* MovieState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF602550211B0064D7CB /* MovieState.swift */; };
+		134CBF6C255022C80064D7CB /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF6B255022C80064D7CB /* ActivityIndicatorView.swift */; };
+		134CBF74255023860064D7CB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF73255023860064D7CB /* LoadingView.swift */; };
+		136DC3172551096B005B1FB8 /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DC3162551096B005B1FB8 /* HomeContentView.swift */; };
+		136DC31C255109B9005B1FB8 /* HomeContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DC31B255109B9005B1FB8 /* HomeContentViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		134CBEE625500AB00064D7CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 134CBECC25500AAF0064D7CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 134CBED325500AAF0064D7CB;
+			remoteInfo = Retflix;
+		};
+		134CBEF125500AB00064D7CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 134CBECC25500AAF0064D7CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 134CBED325500AAF0064D7CB;
+			remoteInfo = Retflix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		134CBED425500AAF0064D7CB /* Retflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Retflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		134CBED725500AAF0064D7CB /* RetflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetflixApp.swift; sourceTree = "<group>"; };
+		134CBEDB25500AB00064D7CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		134CBEDE25500AB00064D7CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		134CBEE025500AB00064D7CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		134CBEE525500AB00064D7CB /* RetflixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetflixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		134CBEE925500AB00064D7CB /* RetflixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetflixTests.swift; sourceTree = "<group>"; };
+		134CBEEB25500AB00064D7CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		134CBEF025500AB00064D7CB /* RetflixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetflixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		134CBEF425500AB00064D7CB /* RetflixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetflixUITests.swift; sourceTree = "<group>"; };
+		134CBEF625500AB00064D7CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		134CBF0625500B330064D7CB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		134CBF0F25500BC30064D7CB /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		134CBF1725500E0C0064D7CB /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
+		134CBF1C25500F060064D7CB /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		134CBF21255015D90064D7CB /* Movie+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Stub.swift"; sourceTree = "<group>"; };
+		134CBF28255016A90064D7CB /* movie_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movie_info.json; sourceTree = "<group>"; };
+		134CBF30255016C50064D7CB /* movie_list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movie_list.json; sourceTree = "<group>"; };
+		134CBF35255016EA0064D7CB /* search_movie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search_movie.json; sourceTree = "<group>"; };
+		134CBF3B255018340064D7CB /* MovieBackdropCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCard.swift; sourceTree = "<group>"; };
+		134CBF44255018A80064D7CB /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		134CBF4C25501C820064D7CB /* MovieBackdropCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCarouselView.swift; sourceTree = "<group>"; };
+		134CBF5125501ECF0064D7CB /* MoviePosterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCard.swift; sourceTree = "<group>"; };
+		134CBF56255020010064D7CB /* MoviePosterCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCarouselView.swift; sourceTree = "<group>"; };
+		134CBF5B255020FF0064D7CB /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		134CBF602550211B0064D7CB /* MovieState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieState.swift; sourceTree = "<group>"; };
+		134CBF6B255022C80064D7CB /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		134CBF73255023860064D7CB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		136DC3162551096B005B1FB8 /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
+		136DC31B255109B9005B1FB8 /* HomeContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		134CBED125500AAF0064D7CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134CBEE225500AB00064D7CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134CBEED25500AB00064D7CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		134CBECB25500AAF0064D7CB = {
+			isa = PBXGroup;
+			children = (
+				134CBED625500AAF0064D7CB /* Retflix */,
+				134CBEE825500AB00064D7CB /* RetflixTests */,
+				134CBEF325500AB00064D7CB /* RetflixUITests */,
+				134CBED525500AAF0064D7CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		134CBED525500AAF0064D7CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134CBED425500AAF0064D7CB /* Retflix.app */,
+				134CBEE525500AB00064D7CB /* RetflixTests.xctest */,
+				134CBEF025500AB00064D7CB /* RetflixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		134CBED625500AAF0064D7CB /* Retflix */ = {
+			isa = PBXGroup;
+			children = (
+				134CBED725500AAF0064D7CB /* RetflixApp.swift */,
+				134CBF43255018910064D7CB /* Bindings */,
+				134CBF3A2550180C0064D7CB /* Views */,
+				134CBF262550161F0064D7CB /* Resources */,
+				134CBF0E25500BAA0064D7CB /* Services */,
+				134CBF0525500B040064D7CB /* Models */,
+				134CBEDB25500AB00064D7CB /* Assets.xcassets */,
+				134CBEE025500AB00064D7CB /* Info.plist */,
+				134CBEDD25500AB00064D7CB /* Preview Content */,
+				134CBF1C25500F060064D7CB /* Utils.swift */,
+			);
+			path = Retflix;
+			sourceTree = "<group>";
+		};
+		134CBEDD25500AB00064D7CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				134CBEDE25500AB00064D7CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		134CBEE825500AB00064D7CB /* RetflixTests */ = {
+			isa = PBXGroup;
+			children = (
+				134CBEE925500AB00064D7CB /* RetflixTests.swift */,
+				134CBEEB25500AB00064D7CB /* Info.plist */,
+			);
+			path = RetflixTests;
+			sourceTree = "<group>";
+		};
+		134CBEF325500AB00064D7CB /* RetflixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				134CBEF425500AB00064D7CB /* RetflixUITests.swift */,
+				134CBEF625500AB00064D7CB /* Info.plist */,
+			);
+			path = RetflixUITests;
+			sourceTree = "<group>";
+		};
+		134CBF0525500B040064D7CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				134CBF0625500B330064D7CB /* Movie.swift */,
+				134CBF21255015D90064D7CB /* Movie+Stub.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		134CBF0E25500BAA0064D7CB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				134CBF0F25500BC30064D7CB /* MovieService.swift */,
+				134CBF1725500E0C0064D7CB /* MovieStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		134CBF262550161F0064D7CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				134CBF28255016A90064D7CB /* movie_info.json */,
+				134CBF30255016C50064D7CB /* movie_list.json */,
+				134CBF35255016EA0064D7CB /* search_movie.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		134CBF3A2550180C0064D7CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				134CBF6A255022AB0064D7CB /* UIKitViews */,
+				134CBF3B255018340064D7CB /* MovieBackdropCard.swift */,
+				134CBF4C25501C820064D7CB /* MovieBackdropCarouselView.swift */,
+				134CBF5125501ECF0064D7CB /* MoviePosterCard.swift */,
+				134CBF56255020010064D7CB /* MoviePosterCarouselView.swift */,
+				134CBF5B255020FF0064D7CB /* MovieListView.swift */,
+				134CBF73255023860064D7CB /* LoadingView.swift */,
+				136DC3162551096B005B1FB8 /* HomeContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		134CBF43255018910064D7CB /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				134CBF44255018A80064D7CB /* ImageLoader.swift */,
+				134CBF602550211B0064D7CB /* MovieState.swift */,
+				136DC31B255109B9005B1FB8 /* HomeContentViewModel.swift */,
+			);
+			path = Bindings;
+			sourceTree = "<group>";
+		};
+		134CBF6A255022AB0064D7CB /* UIKitViews */ = {
+			isa = PBXGroup;
+			children = (
+				134CBF6B255022C80064D7CB /* ActivityIndicatorView.swift */,
+			);
+			path = UIKitViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		134CBED325500AAF0064D7CB /* Retflix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 134CBEF925500AB00064D7CB /* Build configuration list for PBXNativeTarget "Retflix" */;
+			buildPhases = (
+				134CBED025500AAF0064D7CB /* Sources */,
+				134CBED125500AAF0064D7CB /* Frameworks */,
+				134CBED225500AAF0064D7CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Retflix;
+			productName = Retflix;
+			productReference = 134CBED425500AAF0064D7CB /* Retflix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		134CBEE425500AB00064D7CB /* RetflixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 134CBEFC25500AB00064D7CB /* Build configuration list for PBXNativeTarget "RetflixTests" */;
+			buildPhases = (
+				134CBEE125500AB00064D7CB /* Sources */,
+				134CBEE225500AB00064D7CB /* Frameworks */,
+				134CBEE325500AB00064D7CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				134CBEE725500AB00064D7CB /* PBXTargetDependency */,
+			);
+			name = RetflixTests;
+			productName = RetflixTests;
+			productReference = 134CBEE525500AB00064D7CB /* RetflixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		134CBEEF25500AB00064D7CB /* RetflixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 134CBEFF25500AB00064D7CB /* Build configuration list for PBXNativeTarget "RetflixUITests" */;
+			buildPhases = (
+				134CBEEC25500AB00064D7CB /* Sources */,
+				134CBEED25500AB00064D7CB /* Frameworks */,
+				134CBEEE25500AB00064D7CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				134CBEF225500AB00064D7CB /* PBXTargetDependency */,
+			);
+			name = RetflixUITests;
+			productName = RetflixUITests;
+			productReference = 134CBEF025500AB00064D7CB /* RetflixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		134CBECC25500AAF0064D7CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					134CBED325500AAF0064D7CB = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					134CBEE425500AB00064D7CB = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 134CBED325500AAF0064D7CB;
+					};
+					134CBEEF25500AB00064D7CB = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 134CBED325500AAF0064D7CB;
+					};
+				};
+			};
+			buildConfigurationList = 134CBECF25500AAF0064D7CB /* Build configuration list for PBXProject "Retflix" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 134CBECB25500AAF0064D7CB;
+			productRefGroup = 134CBED525500AAF0064D7CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				134CBED325500AAF0064D7CB /* Retflix */,
+				134CBEE425500AB00064D7CB /* RetflixTests */,
+				134CBEEF25500AB00064D7CB /* RetflixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		134CBED225500AAF0064D7CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134CBEDF25500AB00064D7CB /* Preview Assets.xcassets in Resources */,
+				134CBF29255016A90064D7CB /* movie_info.json in Resources */,
+				134CBF31255016C50064D7CB /* movie_list.json in Resources */,
+				134CBF36255016EA0064D7CB /* search_movie.json in Resources */,
+				134CBEDC25500AB00064D7CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134CBEE325500AB00064D7CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134CBEEE25500AB00064D7CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		134CBED025500AAF0064D7CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134CBED825500AAF0064D7CB /* RetflixApp.swift in Sources */,
+				134CBF3C255018340064D7CB /* MovieBackdropCard.swift in Sources */,
+				134CBF1025500BC30064D7CB /* MovieService.swift in Sources */,
+				134CBF5225501ECF0064D7CB /* MoviePosterCard.swift in Sources */,
+				134CBF74255023860064D7CB /* LoadingView.swift in Sources */,
+				134CBF22255015D90064D7CB /* Movie+Stub.swift in Sources */,
+				134CBF612550211B0064D7CB /* MovieState.swift in Sources */,
+				134CBF57255020010064D7CB /* MoviePosterCarouselView.swift in Sources */,
+				136DC31C255109B9005B1FB8 /* HomeContentViewModel.swift in Sources */,
+				134CBF45255018A80064D7CB /* ImageLoader.swift in Sources */,
+				134CBF0725500B330064D7CB /* Movie.swift in Sources */,
+				134CBF6C255022C80064D7CB /* ActivityIndicatorView.swift in Sources */,
+				134CBF4D25501C820064D7CB /* MovieBackdropCarouselView.swift in Sources */,
+				134CBF5C255020FF0064D7CB /* MovieListView.swift in Sources */,
+				134CBF1825500E0C0064D7CB /* MovieStore.swift in Sources */,
+				134CBF1D25500F060064D7CB /* Utils.swift in Sources */,
+				136DC3172551096B005B1FB8 /* HomeContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134CBEE125500AB00064D7CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134CBEEA25500AB00064D7CB /* RetflixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134CBEEC25500AB00064D7CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134CBEF525500AB00064D7CB /* RetflixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		134CBEE725500AB00064D7CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 134CBED325500AAF0064D7CB /* Retflix */;
+			targetProxy = 134CBEE625500AB00064D7CB /* PBXContainerItemProxy */;
+		};
+		134CBEF225500AB00064D7CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 134CBED325500AAF0064D7CB /* Retflix */;
+			targetProxy = 134CBEF125500AB00064D7CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		134CBEF725500AB00064D7CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		134CBEF825500AB00064D7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		134CBEFA25500AB00064D7CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Retflix/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Retflix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.reno.Retflix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		134CBEFB25500AB00064D7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Retflix/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Retflix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.reno.Retflix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		134CBEFD25500AB00064D7CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RetflixTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.reno.RetflixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Retflix.app/Retflix";
+			};
+			name = Debug;
+		};
+		134CBEFE25500AB00064D7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RetflixTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.reno.RetflixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Retflix.app/Retflix";
+			};
+			name = Release;
+		};
+		134CBF0025500AB00064D7CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RetflixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.reno.RetflixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Retflix;
+			};
+			name = Debug;
+		};
+		134CBF0125500AB00064D7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RetflixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.reno.RetflixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Retflix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		134CBECF25500AAF0064D7CB /* Build configuration list for PBXProject "Retflix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134CBEF725500AB00064D7CB /* Debug */,
+				134CBEF825500AB00064D7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		134CBEF925500AB00064D7CB /* Build configuration list for PBXNativeTarget "Retflix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134CBEFA25500AB00064D7CB /* Debug */,
+				134CBEFB25500AB00064D7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		134CBEFC25500AB00064D7CB /* Build configuration list for PBXNativeTarget "RetflixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134CBEFD25500AB00064D7CB /* Debug */,
+				134CBEFE25500AB00064D7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		134CBEFF25500AB00064D7CB /* Build configuration list for PBXNativeTarget "RetflixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134CBF0025500AB00064D7CB /* Debug */,
+				134CBF0125500AB00064D7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 134CBECC25500AAF0064D7CB /* Project object */;
+}
