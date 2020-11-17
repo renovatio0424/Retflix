@@ -33,16 +33,16 @@ class MovieStore: MovieService {
         self.loadURLAndDecode(url: url, params: ["append_to_response" : "videos,credits"], completion: completion)
     }
     
-    func searchMovie(query: String, completion: @escaping (Result<Movie, MovieError>) -> ()) {
-        guard  let url = URL(string: "\(baseAPIURL)/search/movie") else {
+    func searchMovie(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ()) {
+        guard let url = URL(string: "\(baseAPIURL)/search/movie") else {
             completion(.failure(.invalidEndPoint))
             return
         }
         self.loadURLAndDecode(url: url, params: [
-            "language" : "en-US",
-            "include_adult":"false",
-            "region":"US",
-            "query":query
+            "language": "en-US",
+            "include_adult": "false",
+            "region": "US",
+            "query": query
         ], completion: completion)
     }
     

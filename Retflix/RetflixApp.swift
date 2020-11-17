@@ -11,14 +11,14 @@ import SwiftUI
 struct RetflixApp: App {
     var body: some Scene {
         WindowGroup {
-            MovieListView()
+            ContentView()
         }
     }
 }
  
  struct RetflixApp_Previews: PreviewProvider {
     static var previews: some View {
-        MovieListView()
+        ContentView()
     }
  }
  

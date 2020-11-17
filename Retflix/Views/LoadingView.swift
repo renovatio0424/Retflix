@@ -43,6 +43,6 @@ struct LoadingView: View {
 
 struct LoadingView_Previews: PreviewProvider {
     static var previews: some View {
-        LoadingView(isLoading: true, error: nil, retryAction: nil)
+        LoadingView(isLoading: false, error: MovieError.invalidResponse as NSError, retryAction: { print("hello") })
     }
 }

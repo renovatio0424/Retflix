@@ -10,14 +10,14 @@ import Foundation
 protocol MovieService {
     func fetchMovies(from endpoint: MovieListEndPoint, completion: @escaping (Result<MovieResponse, MovieError>) -> ())
     func fetchMovie(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ())
-    func searchMovie(query: String, completion: @escaping (Result<Movie, MovieError>) -> ())
+    func searchMovie(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ())
 }
 
 enum MovieListEndPoint: String {
     case nowPlaying = "now_playing"
-    case upcoming
+    case upcoming = "upcoming"
     case topRated = "top_rated"
-    case popular
+    case popular = "popular"
     
     var description: String {
         switch self {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13341387255953120009370C /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13341386255953120009370C /* MovieDetailView.swift */; };
+		1334138C255953460009370C /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1334138B255953460009370C /* MovieDetailViewModel.swift */; };
+		13341396255969EC0009370C /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13341395255969EC0009370C /* SafariView.swift */; };
 		134CBED825500AAF0064D7CB /* RetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBED725500AAF0064D7CB /* RetflixApp.swift */; };
 		134CBEDC25500AB00064D7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134CBEDB25500AB00064D7CB /* Assets.xcassets */; };
 		134CBEDF25500AB00064D7CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134CBEDE25500AB00064D7CB /* Preview Assets.xcassets */; };
@@ -29,6 +32,10 @@
 		134CBF612550211B0064D7CB /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF602550211B0064D7CB /* MovieViewModel.swift */; };
 		134CBF6C255022C80064D7CB /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF6B255022C80064D7CB /* ActivityIndicatorView.swift */; };
 		134CBF74255023860064D7CB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CBF73255023860064D7CB /* LoadingView.swift */; };
+		137CCE682563CB4100DB1BE4 /* MovieSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137CCE672563CB4100DB1BE4 /* MovieSearchView.swift */; };
+		137CCE6D2563CB7E00DB1BE4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137CCE6C2563CB7E00DB1BE4 /* SearchBar.swift */; };
+		137CCE722563CDF900DB1BE4 /* MovieSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137CCE712563CDF900DB1BE4 /* MovieSearchViewModel.swift */; };
+		137CCE772563D68A00DB1BE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137CCE762563D68A00DB1BE4 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13341386255953120009370C /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		1334138B255953460009370C /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		13341395255969EC0009370C /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		134CBED425500AAF0064D7CB /* Retflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Retflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		134CBED725500AAF0064D7CB /* RetflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetflixApp.swift; sourceTree = "<group>"; };
 		134CBEDB25500AB00064D7CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +87,10 @@
 		134CBF602550211B0064D7CB /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		134CBF6B255022C80064D7CB /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		134CBF73255023860064D7CB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		137CCE672563CB4100DB1BE4 /* MovieSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchView.swift; sourceTree = "<group>"; };
+		137CCE6C2563CB7E00DB1BE4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		137CCE712563CDF900DB1BE4 /* MovieSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewModel.swift; sourceTree = "<group>"; };
+		137CCE762563D68A00DB1BE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +141,7 @@
 		134CBED625500AAF0064D7CB /* Retflix */ = {
 			isa = PBXGroup;
 			children = (
+				137CCE762563D68A00DB1BE4 /* ContentView.swift */,
 				134CBED725500AAF0064D7CB /* RetflixApp.swift */,
 				134CBF43255018910064D7CB /* Bindings */,
 				134CBF3A2550180C0064D7CB /* Views */,
@@ -205,6 +220,8 @@
 				134CBF56255020010064D7CB /* MoviePosterCarouselView.swift */,
 				134CBF5B255020FF0064D7CB /* MovieListView.swift */,
 				134CBF73255023860064D7CB /* LoadingView.swift */,
+				13341386255953120009370C /* MovieDetailView.swift */,
+				137CCE672563CB4100DB1BE4 /* MovieSearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +231,8 @@
 			children = (
 				134CBF44255018A80064D7CB /* ImageLoader.swift */,
 				134CBF602550211B0064D7CB /* MovieViewModel.swift */,
+				1334138B255953460009370C /* MovieDetailViewModel.swift */,
+				137CCE712563CDF900DB1BE4 /* MovieSearchViewModel.swift */,
 			);
 			path = Bindings;
 			sourceTree = "<group>";
@@ -222,6 +241,8 @@
 			isa = PBXGroup;
 			children = (
 				134CBF6B255022C80064D7CB /* ActivityIndicatorView.swift */,
+				13341395255969EC0009370C /* SafariView.swift */,
+				137CCE6C2563CB7E00DB1BE4 /* SearchBar.swift */,
 			);
 			path = UIKitViews;
 			sourceTree = "<group>";
@@ -366,13 +387,20 @@
 				134CBF22255015D90064D7CB /* Movie+Stub.swift in Sources */,
 				134CBF612550211B0064D7CB /* MovieViewModel.swift in Sources */,
 				134CBF57255020010064D7CB /* MoviePosterCarouselView.swift in Sources */,
+				137CCE722563CDF900DB1BE4 /* MovieSearchViewModel.swift in Sources */,
 				134CBF45255018A80064D7CB /* ImageLoader.swift in Sources */,
 				134CBF0725500B330064D7CB /* Movie.swift in Sources */,
 				134CBF6C255022C80064D7CB /* ActivityIndicatorView.swift in Sources */,
+				137CCE772563D68A00DB1BE4 /* ContentView.swift in Sources */,
+				13341396255969EC0009370C /* SafariView.swift in Sources */,
 				134CBF4D25501C820064D7CB /* MovieBackdropCarouselView.swift in Sources */,
 				134CBF5C255020FF0064D7CB /* MovieListView.swift in Sources */,
 				134CBF1825500E0C0064D7CB /* MovieStore.swift in Sources */,
+				1334138C255953460009370C /* MovieDetailViewModel.swift in Sources */,
+				13341387255953120009370C /* MovieDetailView.swift in Sources */,
+				137CCE6D2563CB7E00DB1BE4 /* SearchBar.swift in Sources */,
 				134CBF1D25500F060064D7CB /* Utils.swift in Sources */,
+				137CCE682563CB4100DB1BE4 /* MovieSearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,11 +11,11 @@ class Utils {
     static let jsonDecoder: JSONDecoder = {
         let jsonDecoder = JSONDecoder()
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
-        jsonDecoder.dateDecodingStrategy = .formatted(dataFormatter)
+        jsonDecoder.dateDecodingStrategy = .formatted(dateFormatter)
         return jsonDecoder
     }()
     
-    static let dataFormatter: DateFormatter = {
+    static let dateFormatter: DateFormatter = {
        let dataFormatter = DateFormatter()
         dataFormatter.dateFormat = "yyyy-mm-dd"
         return dataFormatter

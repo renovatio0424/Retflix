@@ -14,45 +14,63 @@ struct MovieListView: View {
     @ObservedObject private var topRatedState = MovieViewModel()
     @ObservedObject private var popularState = MovieViewModel()
     
-    fileprivate func buildPosterView(title: String, viewModel: MovieViewModel, endPoint: MovieListEndPoint) -> some View {
-        return Group {
-            if nowPlayingState.movies != nil {
-                MoviePosterCarouselView(title: title, movies: viewModel.movies!)
-            } else {
-                LoadingView(isLoading: viewModel.isLoading, error: viewModel.error) {
-                    viewModel.loadMovies(with: endPoint)
-                }
-            }
-        }
-        .listRowInsets(EdgeInsets(top: 16, leading: 0, bottom: 8, trailing: 0))
-    }
-    
-    
-    fileprivate func buildCardView(title: String, viewModel: MovieViewModel, endPoint: MovieListEndPoint) -> some View {
-        return Group {
-            if upcomingState.movies != nil {
-                MovieBackdropCarouselView(title: title, movies: viewModel.movies!)
-            } else {
-                LoadingView(isLoading: viewModel.isLoading, error: viewModel.error) {
-                    viewModel.loadMovies(with: endPoint)
-                }
-            }
-        }
-        .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
-    }
-    
     var body: some View {
         NavigationView {
             List {
-                buildPosterView(title: "Now Playing", viewModel: nowPlayingState, endPoint: .nowPlaying)
+                Group {
+                    if nowPlayingState.movies != nil {
+                        MoviePosterCarouselView(title: "Now Playing", movies: nowPlayingState.movies!)
+                    } else {
+                        LoadingView(isLoading: self.nowPlayingState.isLoading, error: self.nowPlayingState.error) {
+                            self.nowPlayingState.loadMovies(with: .nowPlaying)
+                        }
+                    }
+                    
+                }
+                .listRowInsets(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
                 
-                buildCardView(title: "Upcoming", viewModel: upcomingState, endPoint: .upcoming)
+                Group {
+                    if upcomingState.movies != nil {
+                        MovieBackdropCarouselView(title: "Upcoming", movies: upcomingState.movies!)
+                    } else {
+                        LoadingView(isLoading: self.upcomingState.isLoading, error: self.upcomingState.error) {
+                            self.upcomingState.loadMovies(with: .upcoming)
+                        }
+                    }
+                }
+                .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                 
-                buildCardView(title: "Top Rated", viewModel: topRatedState, endPoint: .topRated)
                 
-                buildCardView(title: "Popular", viewModel: popularState, endPoint: .popular)
+                Group {
+                    if topRatedState.movies != nil {
+                        MovieBackdropCarouselView(title: "Top Rated", movies: self.topRatedState.movies!)
+                        
+                    } else {
+                        LoadingView(isLoading: self.topRatedState.isLoading, error: self.topRatedState.error) {
+                            self.topRatedState.loadMovies(with: .topRated)
+                        }
+                    }
+                    
+                    
+                }
+                .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
+                
+                Group {
+                    if popularState.movies != nil {
+                        MovieBackdropCarouselView(title: "Popular", movies: self.popularState.movies!)
+                        
+                    } else {
+                        LoadingView(isLoading: self.popularState.isLoading, error: self.popularState.error) {
+                            self.popularState.loadMovies(with: .popular)
+                        }
+                    }
+                }
+                .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 16, trailing: 0))
+                
+                
+                
             }
-            .navigationTitle("Retflix")
+            .navigationBarTitle("The MovieDb")
         }
         .onAppear {
             self.nowPlayingState.loadMovies(with: .nowPlaying)
@@ -60,6 +78,7 @@ struct MovieListView: View {
             self.topRatedState.loadMovies(with: .topRated)
             self.popularState.loadMovies(with: .popular)
         }
+        
     }
 }
 
